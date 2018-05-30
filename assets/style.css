@@ -60,6 +60,7 @@ body {
 
 .portfolio-page a {
     color: rgb(123,123,123);
+    text-decoration: underline;
 }
 
 .portfolio-page .portfolio-links {
@@ -67,6 +68,7 @@ body {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .05rem;
+    text-decoration: underline;
 }
 
 .portfolio-page a:hover {

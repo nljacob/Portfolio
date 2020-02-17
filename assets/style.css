@@ -19,23 +19,6 @@ body {
   color: rgb(174, 150, 132) !important;
 }
 
-/* HOME-PAGE////////////////////////////////////////////////////////////// */
-.home-page h1 {
-  font-size: 13rem;
-  margin-top: 8%;
-  margin-left: 10%;
-  color: rgb(238, 233, 229);
-  color: rgb(212, 200, 190);
-  font-family: "Mrs Saint Delafield", cursive;
-}
-
-.home-page h3 {
-  margin-left: 46%;
-  margin-top: -6.5%;
-  letter-spacing: 0.15rem;
-  color: rgb(155, 155, 155);
-}
-
 /* ABOUT-PAGE////////////////////////////////////////////////////////////// */
 
 .about-page img {
@@ -59,7 +42,7 @@ body {
 .about-page .fa-linkedin-in {
   color: rgb(155, 155, 155);
   padding: 1%;
-  font-size: 140%;  
+  font-size: 140%;
 }
 
 .about-page .fa-github:hover {

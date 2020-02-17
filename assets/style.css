@@ -53,11 +53,13 @@ body {
 .about-page .fa-github {
   color: rgb(155, 155, 155);
   padding: 1%;
+  font-size: 140%;
 }
 
 .about-page .fa-linkedin-in {
   color: rgb(155, 155, 155);
   padding: 1%;
+  font-size: 140%;  
 }
 
 .about-page .fa-github:hover {

@@ -101,6 +101,25 @@ body {
   height: 20rem;
 }
 
+.portfolio-page ul li {
+  margin-top: 0.7%;
+}
+
+.portfolio-page ul {
+  list-style: none;
+}
+
+.portfolio-page ul li::before {
+  content: "-";
+  color: rgb(97, 97, 97);
+  font-weight: bold;
+  display: inline-block;
+  /* width: 1.5em;
+  margin-left: -1.5em; */
+  width: 0.8em;
+  margin-left: -0.8em;
+}
+
 /* CONTACT-PAGE */
 
 .contact-page h4 {

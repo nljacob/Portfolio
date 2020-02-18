@@ -203,6 +203,13 @@ input[type="email"]:focus {
 
 /* MEDIA QUERIES */
 
+@media only screen and (max-width: 1199px) {
+  .b-items {
+    margin-right: -4%;
+    margin-left: 4%;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .about-page .bio {
     margin-top: -5%;

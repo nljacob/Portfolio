@@ -96,9 +96,8 @@ body {
 }
 
 .portfolio-page img {
-  /* height: 52%; */
-  /* height: 300px; */
   height: 20rem;
+  width: auto;
 }
 
 .portfolio-page ul li {
@@ -203,13 +202,6 @@ input[type="email"]:focus {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1199px) {
-  .b-items {
-    margin-right: -4%;
-    margin-left: 4%;
-  }
-}
-
 @media only screen and (max-width: 991px) {
   .about-page .bio {
     margin-top: -5%;
@@ -217,6 +209,13 @@ input[type="email"]:focus {
   }
   .about-page .about-account-links {
     margin-left: 40%;
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  .portfolio-page img {
+    height: 17rem;
+    width: auto;
   }
 }
 

@@ -121,6 +121,13 @@ html {
   margin-left: -0.8em;
 }
 
+.portfolio-page .github-url{
+  word-wrap:break-word; 
+  display: inline-block; 
+  overflow-wrap: break-word; 
+  word-break: break-all
+}
+
 /* CONTACT-PAGE */
 
 .contact-page h4 {

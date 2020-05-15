@@ -121,12 +121,12 @@ html {
   margin-left: -0.8em;
 }
 
-.portfolio-page .github-url{
+/* .portfolio-page .github-url{
   word-wrap:break-word; 
   display: inline-block; 
   overflow-wrap: break-word; 
   word-break: break-all
-}
+} */
 
 /* CONTACT-PAGE */
 
@@ -252,6 +252,13 @@ input[type="email"]:focus {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .portfolio-page img {
+    height: 13rem;
+    width: auto;
+  }
+}
+
 @media only screen and (max-width: 405px) {
   .contact-page h4 {
     margin-bottom: 6%;
@@ -269,5 +276,12 @@ input[type="email"]:focus {
 
   .contact-page input[type="submit"] {
     width: 20%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .portfolio-page img {
+    height: 11rem;
+    width: auto;
   }
 }

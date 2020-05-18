@@ -1,24 +1,31 @@
-body,
-html {
+body, html {
   font-size: 100%;
   height: 100%;
 }
 
 * {
-  color: rgb(97, 97, 97);
-  font-family: "Mallanna", sans-serif;
+  color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* NAVBAR */
+.navbar-custom{
+  background-color: rgb(240,240,240)
 }
 
 .navbar ul li {
-  margin: auto 20px auto 20px;
+  margin: auto 60px auto 60px;
 }
+
 .navbar ul li a {
-  color: rgb(97, 97, 97) !important;
-  letter-spacing: 0.1rem;
+  color: black !important;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  font-size: 1.1rem;
 }
 
 .navbar ul li a:hover {
-  color: rgb(174, 150, 132) !important;
+  color: rgb(190,171,156) !important;
 }
 
 /* ABOUT-PAGE */
@@ -30,69 +37,45 @@ html {
 }
 
 .about-page p {
-  font-size: 1rem;
-  margin-top: 15%;
-  letter-spacing: 0.01rem;
+  font-size: 1.2rem;
+  margin-top: 14%;
 }
 
-.about-page .fa-github {
-  color: rgb(155, 155, 155);
+.about-page .fa-github, .about-page .fa-linkedin-in {
+  color: rgb(102,101,109);
   padding: 1%;
   font-size: 140%;
 }
 
-.about-page .fa-linkedin-in {
-  color: rgb(155, 155, 155);
-  padding: 1%;
-  font-size: 140%;
-}
-
-.about-page .fa-github:hover {
-  color: rgb(163, 163, 163);
-  font-weight: bold;
-}
-
-.about-page .fa-linkedin-in:hover {
-  color: rgb(163, 163, 163);
-  font-weight: bold;
+.about-page .fa-github:hover, .about-page .fa-linkedin-in:hover {
+  color: rgb(190,171,156);
 }
 
 /* PORTFOLIO-PAGE */
-.portfolio-page h4 {
-  margin-top: 5%;
-  letter-spacing: 0.15rem;
-  color: rgb(123, 123, 123);
-}
-
-.portfolio-page a {
-  color: rgb(97, 97, 97);
-  /* text-decoration: underline; */
-}
 
 .portfolio-page .portfolio-links {
-  /* color: rgb(174,150,132); */
-  color: rgb(162, 135, 114);
-  font-size: 1.2rem;
+  color: rgb(71,70,76);
+  font-weight: bold;
+  font-size: 1.13rem;
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  /* text-decoration: underline; */
+  letter-spacing: 0.17rem;
 }
 
-.portfolio-page a:hover {
-  color: rgb(212, 200, 190);
+.portfolio-page a:hover, .portfolio-page .github-url:hover {
+  color: rgb(190,171,156);
+  text-decoration: underline;
 }
 
 .portfolio-page .content-title {
-  /* color: rgb(174,150,132); */
   color: rgb(162, 135, 114);
-  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .portfolio-page hr {
   background-color: rgb(212, 200, 190);
   margin-top: 3%;
   margin-bottom: 3%;
-  height: 0.9px;
+  height: 2px;
   border: none;
 }
 
@@ -103,6 +86,7 @@ html {
 
 .portfolio-page ul li {
   margin-top: 0.7%;
+  font-size: 1.14rem;
 }
 
 .portfolio-page ul {
@@ -112,10 +96,9 @@ html {
 .portfolio-page ul li::before {
   content: "-";
   color: rgb(97, 97, 97);
+  color: black;
   font-weight: bold;
   display: inline-block;
-  /* width: 1.5em;
-  margin-left: -1.5em; */
   width: 0.8em;
   margin-left: -0.8em;
 }
@@ -130,48 +113,50 @@ html {
 /* CONTACT-PAGE */
 
 .contact-page h4 {
+  font-size: 1.2rem;
   margin-top: 4%;
   margin-bottom: 3%;
-  letter-spacing: 0.15rem;
-  color: rgb(123, 123, 123);
+  letter-spacing: 0.25rem;
+  font-weight: bold;
+  color: rgb(71,70,76);
 }
 
-.contact-page input[type="text"],
-input[type="email"] {
-  /* border: 3px solid rgb(238,233,229); */
+.contact-page input[type="text"], input[type="email"] {
   text-align: center;
   margin-bottom: 1.5%;
   letter-spacing: 0.1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   width: 400px;
   height: 40px;
+  border-radius: 3px;
+  border: 0.5px solid rgb(139,138,146);
 }
 
-.contact-page input[type="text"]:focus,
-input[type="email"]:focus {
+.contact-page input[type="text"]:focus, input[type="email"]:focus {
   outline: rgb(212, 200, 190) 1.8px solid;
   background-color: white;
 }
 
 .contact-page textarea {
-  /* border: 3px solid rgb(238,233,229); */
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   margin-bottom: 1.5%;
   width: 400px;
   height: 125px;
+  border-radius: 3px;
+  border: 0.5px solid rgb(139,138,146);
 }
 
 .contact-page textarea:focus {
   outline: rgb(212, 200, 190) 1.8px solid;
-  background-color: white;
+  color: black
 }
 
 .contact-page input[type="submit"] {
-  border: 0.5px solid rgb(155, 155, 155);
-  /* border-radius: 4px; (rounded button)*/
+  border-radius: 3px;
+  border: 0.5px solid rgb(139,138,146);
   background-color: white;
-  width: 10%;
+  padding: .5% 4% .5% 4%;
   cursor: pointer;
 }
 
@@ -184,28 +169,15 @@ input[type="email"]:focus {
   margin-top: 3%;
 }
 
-.contact-page .fa-github {
-  color: rgb(155, 155, 155);
+.contact-page .fa-github, .contact-page .fa-linkedin-in{
+  color: rgb(102,101,109);
   padding: 1%;
-  border: 3px solid rgb(238, 233, 229);
-  /* border-radius: 4px; (rounded border)*/
+  border: 2px solid rgb(238, 233, 229);
+  border-radius: 3px;
 }
 
-.contact-page .fa-linkedin-in {
-  color: rgb(155, 155, 155);
-  padding: 1%;
-  border: 3px solid rgb(238, 233, 229);
-  /* border-radius: 4px; (rounded border)*/
-}
-
-.contact-page .fa-github:hover {
-  color: rgb(163, 163, 163);
-  font-weight: bold;
-}
-
-.contact-page .fa-linkedin-in:hover {
-  color: rgb(163, 163, 163);
-  font-weight: bold;
+.contact-page .fa-github:hover, .contact-page .fa-linkedin-in:hover{
+  color: rgb(190,171,156);
 }
 
 /* MEDIA QUERIES */
@@ -278,17 +250,19 @@ input[type="email"]:focus {
 
 @media only screen and (max-width: 405px) {
   .contact-page h4 {
-    margin-bottom: 6%;
+    margin-top: 15%;
+    margin-bottom: 8%;
   }
 
-  .contact-page input[type="text"],
-  input[type="email"] {
+  .contact-page input[type="text"], input[type="email"] {
     width: 250px;
     height: 40px;
+    margin-bottom: 4%;
   }
 
   .contact-page textarea {
     width: 250px;
+    margin-bottom: 2%;
   }
 
   .contact-page input[type="submit"] {
